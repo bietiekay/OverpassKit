@@ -28,7 +28,7 @@ A modern, Swift-based library for interacting with the Overpass API. OverpassKit
 Add OverpassKit to your project using Swift Package Manager:
 
 1. In Xcode, go to **File** → **Add Package Dependencies**
-2. Enter the repository URL: `https://github.com/yourusername/OverpassKit.git`
+2. Enter the repository URL: `https://github.com/bietiekay/OverpassKit.git`
 3. Select the version you want to use
 4. Click **Add Package**
 
