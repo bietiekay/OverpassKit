@@ -29,6 +29,9 @@ public struct OverpassElement: Codable, Equatable, Identifiable {
     
     /// Geometry information for ways
     public let geometry: [OverpassGeometry]?
+
+    /// Timestamp provided by Overpass (requires `out meta`)
+    public let timestamp: String?
     
     // MARK: - Computed Properties
     
@@ -118,7 +121,8 @@ public struct OverpassElement: Codable, Equatable, Identifiable {
         tags: [String: String]? = nil,
         members: [OverpassMember]? = nil,
         nodes: [Int64]? = nil,
-        geometry: [OverpassGeometry]? = nil
+        geometry: [OverpassGeometry]? = nil,
+        timestamp: String? = nil
     ) {
         self.id = id
         self.type = type
@@ -128,6 +132,7 @@ public struct OverpassElement: Codable, Equatable, Identifiable {
         self.members = members
         self.nodes = nodes
         self.geometry = geometry
+        self.timestamp = timestamp
     }
     
     // MARK: - Utility Methods

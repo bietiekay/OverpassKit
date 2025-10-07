@@ -166,7 +166,8 @@ public class OverpassQuery {
         }
         
         let query = queryParts.joined(separator: ";")
-        return "(\(query););out body;>;out skel qt;"
+        // Request element metadata (incl. timestamp) using `out meta`
+        return "(\(query););out body meta;>;out skel qt;"
     }
     
     /// Builds a query string for a specific element type
