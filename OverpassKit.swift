@@ -8,7 +8,7 @@ public struct OverpassKit {
     /// Default Overpass API endpoints
     public enum Endpoint: String, CaseIterable {
         case overpassAPI = "https://overpass-api.de/api/interpreter"
-        case miataru = "https://overpass.miataru.com/api/interpreter"
+        case miataru = "https://replacehere/api/interpreter"
         case kumiSystems = "https://overpass.kumi.systems/api/interpreter"
         
         var url: URL {
